@@ -13,6 +13,7 @@ int main() {
         if (opcion == 1) {
             cout << "------------------------------------------" << endl
                  << "Eligio leer archivo"<<endl; // Aqui va la funcion leer_archivo
+            void leer_archivo();
         } else if (opcion == 2) {
             cout << "------------------------------------------" << endl
                  << "Eligio guardar archivo"<<endl; // Aqui va la funcion guardar_archivo
