@@ -48,6 +48,26 @@ void guardar_archivo(){
             archivo << texto[i];
         }
     }
+    if (opcion == 2) {
+        cout<<"------------------------------------------"<<endl
+            <<"Eligio alinear a la derecha"<<endl;
+        string espacio;
+        for (int i = 0;i<texto.size();i++){
+            string palabra = "";
+            if(i>60*e && texto[i] == ' '){
+                for (int j = 0; j < 60; j++) {
+                    espacio += ' ';
+                }
+                palabra = espacio + palabra;
+                archivo<<palabra<<endl;
+                e++;
+                i++;
+            }
+            palabra += texto[i];
+
+        }
+        archivo<<palabra;
+    }
     archivo.close();// cierra el archivo
 }
 void contar_palabra(){
